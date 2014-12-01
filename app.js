@@ -19,6 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 //app.engine('.html',ejs._express);
 //app.set('view engine','html');
+//app.engine('.html',require('ejs').renderFile);
 
 app.use(favicon());
 app.use(logger('dev'));
