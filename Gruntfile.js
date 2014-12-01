@@ -18,7 +18,7 @@ module.exports=function(grunt){
 				expand:true,
 				files:{
 					'public/css/lib/bootstrap.css':'public/css/lib/bootstrap.min.css',
-					'public/css/lib/bootstrap-theme.css':'public/css/lib/bootstrap-theme.min.css',
+					'public/css/lib/bootstrap-theme.css':'public/css/lib/bootstrap-theme.min.css'
 				}
 			}
 		},
