@@ -6,19 +6,20 @@ module.exports=function(grunt){
 									
 				},
 				files: {
-					'public/css/lib/bootstrap.css':'public/less/lib/bootstrap.less'
+					'public/css/main.css':'public/less/main.less'
 				}
 			},
 			
 			minify:{
 				options: {
-					cleancss:true,
-					report:'min'
+					
 				},
 				expand:true,
 				files:{
-					'public/css/lib/bootstrap.css':'public/css/lib/bootstrap.min.css',
-					'public/css/lib/bootstrap-theme.css':'public/css/lib/bootstrap-theme.min.css'
+					'public/css/lib/bootstrap.min.css':'public/css/lib/bootstrap.css',
+					'public/css/lib/bootstrap-theme.min.css':'public/css/lib/bootstrap-theme.css',
+					'public/css/lib/font-awesome.min.css':'public/css/lib/font-awesome.css',
+					'public/css/main.min.css':'public/css/main.css'
 				}
 			}
 		},

@@ -1,0 +1,44 @@
+@import "variable.less";
+ body{
+	background:url('../image/house.jpg') no-repeat;
+	background-size:100% auto;
+	width:100%;
+	height:100%;
+}
+
+.container{
+	width:@form-width;
+	height:@form-width+40px;
+	background:rgba(13,69,107,0.7);
+	margin-top:@form-width+(-220px);
+}
+
+.form-horizontal{
+	width:100%;
+	height:100%;
+	text-align:left;	
+	.title{
+		padding-top:@padding-l;
+		font-size:@font-size-l;
+		line-height:@font-size-l;
+		color:@title-color;
+	}
+	div,.form-group{
+		padding:@padding-m @padding-l;
+		margin:0;
+	}
+	.chktip{
+		color:@brand-primary+(-10);
+	}
+	.t-footer{
+		font-size:@font-size-s;
+		color:@brand-primary;
+		a{
+			text-decoration:none;
+		}
+	}
+	.fa-paper-plane-o{
+		font-size:@font-size-m;
+		margin-right:@margin-m;
+	}
+}

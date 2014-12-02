@@ -1,11 +1,47 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>main.html</title>
+		<meta charst="utf-8" />
+		<title>welcome page</title>
+		<meta name="viewport" content="width=device-width ,initial-scale=1.0 ,minimum-scale=1.0 ,maximum-scale=1.0">
+		<meta http-equiv="content-type" content="text/html">
+		<meta http-equiv="content-language" content="zh-cn">
+		<meta name="keyword" content="css3,html5,js">
+		<meta name="author" content="hongyang">
+		<meta name="description" content="/">
+		<link type="text/css" rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/lib/bootstrap-theme.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/lib/font-awesome.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body>
-		<div>this is main !</div>
-		<div>haha, changed again !</div>
-		<div class="image"><img src="image/house.jpg"/></div>
+		<div class="container">
+			<form class="form-horizontal">
+				<div class="title">
+					Login To Your Account 
+				</div>
+				<div class="form-group">
+					<label for="username" class="sr-only">–’√˚£∫</label>
+					<input type="text" id="username" class="form-control" name="username" placeholder="Username"/>
+				</div>
+				<div class="form-group">
+					<label for="password" class="sr-only">√‹¬Î£∫</label>
+					<input type="password" id="password" class="form-control" name="password" placeholder="Password"/>
+				</div>
+				<div class="form-group">
+					<label>
+						<input type="checkbox" />
+						<span class="chktip">Remember me</span>
+					</label>
+				</div>
+				<div class="form-group">
+					<input type="button" class="form-control" value="login"/>
+				</div>
+				<div class="form-group">
+					<label class="t-footer">
+					<i class="fa fa-paper-plane-o"></i><a href="https://unode.herokuapp.com">https://unode.herokuapp.com</a></label>
+				</div>
+			</form>
+		</div>
 	</body>
 </html>

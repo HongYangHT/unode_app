@@ -16,10 +16,10 @@ var app = express();
 // view engine setup
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+//app.set('view engine', 'ejs');
 //app.engine('.html',ejs._express);
-//app.set('view engine','html');
-//app.engine('.html',require('ejs').renderFile);
+app.engine('.html',require('ejs').renderFile);
+app.set('view engine','html');
 
 app.use(favicon());
 app.use(logger('dev'));
