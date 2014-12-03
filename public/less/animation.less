@@ -1,0 +1,101 @@
+/*animation shake*/
+@import "variable.less";
+.shake {
+	height:@font-size-l;
+	animation : shake 5s;
+	-moz-animation :shake 5s;
+	-webkit-animation:shake 5s;
+	-0-animation:shake 5s;
+}
+
+@keyframes shake {
+	0% 	 {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+	25%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	50%  {
+		width:@font-size-s+(-0.1em);
+		height:@font-size-s+(-0.1em);
+	}
+	75%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	100% {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+}
+
+@-moz-keyframes shake {
+	0% 	 {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+	25%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	50%  {
+		width:@font-size-s+(-0.1em);
+		height:@font-size-s+(-0.1em);
+	}
+	75%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	100% {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+}
+
+@-webkit-keyframes shake {
+	0% 	 {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+	25%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	50%  {
+		width:@font-size-s+(-0.1em);
+		height:@font-size-s+(-0.1em);
+	}
+	75%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	100% {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+}
+
+@-o-keyframes shake {
+	0% 	 {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+	25%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	50%  {
+		width:@font-size-s+(-0.1em);
+		height:@font-size-s+(-0.1em);
+	}
+	75%  {
+		width:@font-size-s;
+		height:@font-size-s;
+	}
+	100% {
+		width:@font-size-m;
+		height:@font-size-m;
+	}
+}
