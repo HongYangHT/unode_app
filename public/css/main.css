@@ -1,3 +1,99 @@
+/*animation shake*/
+.shake {
+  height: 20px;
+  animation: shake 3s;
+  -moz-animation: shake 3s;
+  -webkit-animation: shake 3s;
+  -0-animation: shake 3s;
+}
+@keyframes shake {
+  0% {
+    width: 87px;
+    height: 24px;
+  }
+  25% {
+    width: 84px;
+    height: 21px;
+  }
+  50% {
+    width: 81px;
+    height: 20px;
+  }
+  75% {
+    width: 84px;
+    height: 21px;
+  }
+  100% {
+    width: 87px;
+    height: 24px;
+  }
+}
+@-moz-keyframes shake {
+  0% {
+    width: 87px;
+    height: 24px;
+  }
+  25% {
+    width: 84px;
+    height: 21px;
+  }
+  50% {
+    width: 81px;
+    height: 20px;
+  }
+  75% {
+    width: 84px;
+    height: 21px;
+  }
+  100% {
+    width: 87px;
+    height: 24px;
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    width: 87px;
+    height: 24px;
+  }
+  25% {
+    width: 84px;
+    height: 21px;
+  }
+  50% {
+    width: 81px;
+    height: 20px;
+  }
+  75% {
+    width: 84px;
+    height: 21px;
+  }
+  100% {
+    width: 87px;
+    height: 24px;
+  }
+}
+@-o-keyframes shake {
+  0% {
+    width: 87px;
+    height: 24px;
+  }
+  25% {
+    width: 84px;
+    height: 21px;
+  }
+  50% {
+    width: 81px;
+    height: 20px;
+  }
+  75% {
+    width: 84px;
+    height: 21px;
+  }
+  100% {
+    width: 87px;
+    height: 24px;
+  }
+}
 body {
   background: url('../image/house.jpg') no-repeat;
   background-size: 100% auto;
@@ -5,10 +101,47 @@ body {
   height: 100%;
 }
 .container {
-  width: 300px;
-  height: 340px;
+  position: relative;
+  width: 350px;
   background: rgba(13, 69, 107, 0.7);
-  margin-top: 80px;
+  margin-top: 130px;
+  padding-top: 28px;
+}
+.switch {
+  width: auto;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.switch .fa {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.switch .tooltips {
+  cursor: pointer;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  position: absolute;
+  right: -85px;
+  top: 0px;
+  padding: 1px;
+}
+.switch .tooltips:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: -15px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
 }
 .form-horizontal {
   width: 100%;

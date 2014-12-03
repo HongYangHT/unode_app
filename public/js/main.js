@@ -9,7 +9,7 @@
 	var $container = $('.container');
 	//switch icon
 	
-	$switch.on('click','i.fa',function(e){
+	$switch.on('click','i.fa,.shake',function(e){
 		var $this = $(this);
 		$this.toggleClass('fa-pencil');
 		animateInOut();

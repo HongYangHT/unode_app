@@ -8,36 +8,47 @@
 }
 
 .container{
+	position: relative;
 	width:@form-width;
 	background:rgba(13,69,107,0.7);
 	margin-top:@form-width+(-220px);
+	padding-top:@padding-x+8px;
 }
 
 .switch{
-	width:@font-size-l;
-	height:@font-size-l;
-	position:relative;
-	margin-right:0px;
-	margin-top:@margin-m;
+	width:auto;
+	position:absolute;
+	top:5px;
+	right:5px;
 	.fa{
+		font-size:@font-size-l;
 		color:#fff;
 		cursor:pointer;
-		font-size:0.75em;
 	}
 	.tooltips{
-		font-size:@font-size-m£»
+		cursor:pointer;
+		font-size:@font-size-m+3px;
 		background:rgba(0,0,0,.6);
-		color:rgba(#fff,0.6);
+		color:rgba(0,0,0,0.6);
 		font-weight:bold;
-		line-height:1;
+		line-height:@font-size-m+8px;
 		text-align:left;
 		text-transform:uppercase;
-	}
-	.tooltips:before{
-		border-top:5px solid transparent;
-		border-right:5px solid rgba(0,0,0,.6);
-		border-bottom:5px solid transparent;
-		border-left:5px solid transparent;
+		position:absolute;
+		right:-85px;
+		top:0px;
+		padding:1px;
+	  &:before{
+	    content:"";
+	    display:block;
+	    position:absolute;
+	    top:2px;
+	    left:-15px;
+		  border-top:8px solid transparent;
+		  border-right:8px solid rgba(0,0,0,.6);
+		  border-bottom:8px solid transparent;
+		  border-left:8px solid transparent;
+	  }
 	}
 }
 
