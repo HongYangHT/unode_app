@@ -8,6 +8,7 @@
 	var $switch = $('.switch');
 	var $container = $('.container');
 	//switch icon
+	var $birthDate = $('#birthDate');
 	
 	$switch.on('click','i.fa,.shake',function(e){
 		var $this = $(this);
@@ -28,5 +29,7 @@
 			});
 		});		
 	}
+	
+	$birthDate.datepicker();
 		
 })(jQuery);
