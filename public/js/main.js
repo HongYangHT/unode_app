@@ -11,7 +11,11 @@
 	
 	$switch.on('click','i.fa,.shake',function(e){
 		var $this = $(this);
-		$this.toggleClass('fa-pencil');
+		if($this.is('.fa')){
+			$this.toggleClass('fa-pencil');			
+		}else{
+			$this.siblings('i.fa').toggleClass('fa-pencil');
+		}
 		animateInOut();
 	});
 	
