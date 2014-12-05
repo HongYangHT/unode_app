@@ -30,6 +30,6 @@
 		});		
 	}
 	
-	$birthDate.datepicker();
+//	$birthDate.datepicker();
 		
 })(jQuery);

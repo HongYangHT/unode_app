@@ -101,6 +101,7 @@ body {
   height: 100%;
 }
 .container {
+  border-radius: 8px;
   position: relative;
   width: 350px;
   background: rgba(13, 69, 107, 0.7);
